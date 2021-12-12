@@ -1,5 +1,5 @@
 // @ts-nocheck
-import Usuario from '../Models/usuario';
+import Usuario from '../Models/Usuario';
 import Producto from '../Models/Producto';
 import Cliente from '../Models/Cliente';
 import Pedido from '../Models/Pedidos';

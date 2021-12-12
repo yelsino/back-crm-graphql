@@ -1,5 +1,5 @@
 // import express from "express";
-import { ApolloServer, gql } from "apollo-server";
+import { ApolloServer } from "apollo-server";
 import connectarDatabase from "./config/database";
 import dotenv from 'dotenv';
 import typeDefs from "./db/schema";
@@ -37,6 +37,10 @@ const server = new ApolloServer({
   introspection: true,
 });
 
-server.listen().then(({ url }) => {
-  console.log(`server ready at ${url}`);
-})
+// config server port on deploy
+const PORT = process.env.PORT || 4000;
+server.listen(PORT).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
+
+

@@ -1,8 +1,8 @@
 // @ts-nocheck
-import Usuario from '../models/usuario';
-import Producto from '../models/Producto';
-import Cliente from '../models/Cliente';
-import Pedido from '../models/Pedidos';
+import Usuario from '../Models/usuario';
+import Producto from '../Models/Producto';
+import Cliente from '../Models/Cliente';
+import Pedido from '../Models/Pedidos';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
